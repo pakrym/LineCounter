@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>dotnet-LineCounter.Worker-29A2B5A0-99EA-476E-8401-0D3E8382F6A8</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Messaging.EventHubs" Version="5.0.0-preview.6" />
+    <PackageReference Include="Azure.Messaging.EventHubs.Processor" Version="5.0.0-preview.6" />
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="3.1.0" />
+  </ItemGroup>
+</Project>
