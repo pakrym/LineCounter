@@ -37,7 +37,7 @@ namespace LineCounter.Controllers
 
             foreach (var file in HttpContext.Request.Form.Files)
             {
-                var fileName = Guid.NewGuid().ToString("n") + " " + file.FileName;
+                var fileName = file.FileName;
 
                 await using var stream = file.OpenReadStream();
 

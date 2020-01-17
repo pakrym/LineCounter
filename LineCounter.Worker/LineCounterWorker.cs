@@ -66,7 +66,7 @@ namespace LineCounter
 
                     _logger.LogInformation("Processing {blob}", blobName);
 
-                    var fileStream = new MemoryStream();
+                    var fileStream = new MemoryStream(new byte[2048]);
                     await downloadInfo.Value.Content.CopyToAsync(fileStream, eventArgs.CancellationToken);
 
                     var newLineCount = fileStream.ToArray().Count(b => b == '\n');
